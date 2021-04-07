@@ -10,8 +10,9 @@ def curves(n: int):
     plt.plot(np.array([pow(2,i) for i in range(1,n)]))
     plt.plot(np.array([i * math.log(i) for i in range(1,n)]))
     plt.legend(["n","log(n)","n²","2^*n","n log(n)"])
-    plt.show()
     plt.savefig("result.png")
+    plt.show()
+
 
 
 curves(5)
